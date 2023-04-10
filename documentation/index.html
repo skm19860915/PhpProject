@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/custom.css?v=1">
+        <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css
+
+">
+        <title>Upic Documentation</title>
+    </head>
+    <body>
+	    
+	    <div class="container">
+	    	
+	    	<h2>Upic Documentation<br><small style="font-size: 20px;">By Axel Hardy</small></h2>
+	    	
+	    	<p style="margin-top: 20px; text-align: center;">
+		    	Thanks for purchasing <b>Upic</b> and welcome to the documentation file.<br><br>I offer two ways to install the script, doing it by yourself thanks to this documentation <b>OR</b> being hosted on my own optimized server with free installation service of Upic.
+	    	</p>
+	    	
+	    	<hr style="margin-top: 40px; margin-bottom: 50px;">
+	    	
+	    	
+	    	<div class="doc_plans_container">
+		    	<div class="row">
+			    	<div class="col-md-12">
+			    		<h3>Choose your Option</h3>
+			    	</div>
+		    	</div>
+		    	
+		    	<div class="row">
+			    	
+			    	<div class="col-md-6">
+				    	<div class="card">
+					    	
+					    	<div class="card-body">
+				    			<h4>Follow the Documentation<br><small>Install <b>Upic</b> by yourself on your hosting</small></h4>
+				    			<div class="card-in">
+					    			<a href="documentation.html" class="btn btn-primary btn-block">Install Upic by Myself</a>
+				    			</div>
+					    	</div>
+					    	
+				    	</div>
+			    	</div>
+			    	
+			    	<div class="col-md-6">
+				    	<div class="card">
+					    	
+					    	<div class="card-body">
+				    			<h4>Hosting & Free Installation Service<br><small>You will be hosted on my own dedicated and optimized server and you will just have to pay the hosting service</small></h4>
+				    			<div class="card-in">
+					    			<ul class="list-group">
+										<li class="list-group-item"><i class="fas fa-check"></i> Free Installation Service</li>
+										<li class="list-group-item"><i class="fas fa-check"></i> Quick Support</li>
+										<li class="list-group-item"><i class="fas fa-check"></i> Optimized and Dedicated Web Hosting<br><small>With FTP and Database (PhpMyAdmin) access</small></li>
+										<li class="list-group-item"><i class="fas fa-check"></i> SSL Certificate (https)</li>
+										<li class="list-group-item"><i class="fas fa-check"></i> Unlimited Traffic</li>
+										<li class="list-group-item"><i class="fas fa-check"></i> 100Gb Disk Space</li>
+									</ul>
+					    			<a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#hostingModal">Request Hosting & Installation Service<br><small>Just $5.90 / month</small></a>
+				    			</div>
+					    	</div>
+					    	
+				    	</div>
+			    	</div>
+			    	
+		    	</div>
+	    	</div>
+	    
+	    </div>
+	    
+	    <!-- Modal -->
+		<div class="modal fade" id="hostingModal" tabindex="-1" role="dialog" aria-labelledby="hostingModal" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Request Hosting & Installation Service</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-block">
+							<div class="alert alert-info alert-center">
+								Just enter your email below. I will reply with the required details ASAP.
+							</div>
+							<form method="post" action="">
+								<div class="form-group">
+									<label>Your Email</label>
+									<input type="email" name="email" class="form-control email" placeholder="Enter your Email" />
+								</div>
+								<div class="alert alert-danger alert-center alert-form">
+									
+								</div>
+								<button class="btn btn-primary btn-block btn-send" type="submit">SEND</button>
+							</form>
+						</div>
+						<div class="success-block">
+							<div class="alert alert-success alert-center">
+								<b>Thanks!</b><br>
+								I will come back to you in the next hours with all the details required.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+        <script src="js/prism.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+	        
+	        $(document).ready(function() {
+		       
+		    	$(".btn-send").click(function(e) {
+			    	
+			    	e.preventDefault();
+			    	
+			    	$(".alert-form").hide();
+			    	
+			    	var email = $(".email").val();
+			    	
+			    	$.ajax({
+						url: "ajax/send-email.php",
+						type: 'POST',
+				        data: {
+					       	email: email
+				        },
+				        dataType: "json",
+				        success: function (data) {
+					        
+					        if(data.error && data.error != "") {
+						        
+						    	$(".alert-form").html(data.error).fadeIn();
+						    	   
+					        } else if(data.success) {
+						        
+						        $(".form-block").hide();
+						        $(".success-block").fadeIn();
+						        
+					        }
+					        
+						}
+					});
+			    	
+		    	});
+		        
+	        });
+	        
+	    </script>
+    </body>
+</html>

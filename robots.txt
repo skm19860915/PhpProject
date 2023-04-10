@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /uploads
+Disallow: /crons
+Disallow: /includes
+Disallow: /stripe
+Disallow: /vendor

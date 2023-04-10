@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/custom.css?v=<?php echo mt_rand(0,999999); ?>">
+        <title>Upic Documentation</title>
+    </head>
+    <body>
+	    
+	    <div class="container">
+	    	
+	    	<h2>Upic Documentation<br><small style="font-size: 20px;">By Axel Hardy</small></h2>
+	    	
+	    	<p style="margin-top: 20px;">
+		    	Thanks for purchasing <b>Upic</b>. This page is a documentation that will help you to set up Upic on your web hosting in just a few minutes.<br>
+		    	In case you need some help or something is not working, feel free to message me from <a href="https://codecanyon.net/user/fraxool">my CodeCanyon profile page</a>.
+	    	</p>
+	    	
+	    	<hr style="margin-top: 40px; margin-bottom: 50px;">
+	    	
+	    	<h3>Step 1 - Install Upic</h3>
+	    	
+	    	<p>
+		    	In this part we will cover the installation of Upic on your own website hosting, from the files to the database.<br><br>
+-		    	You need to have a web hosting already unless you want to install Upic locally. If you don't have a web hosting yet, I recommend <a target="_blank" href="https://www.bluehost.com/track/fraxool/" style="font-weight: bold;font-size: 18px;">Bluehost</a>. You can start by the cheapest plan which is still awesome, for example, it's one of the only hosting which gives you <b>SSD storage</b> (it makes your website a lot faster and is even better for the upload features of Upic!). Here is how to do if you want to use Bluehost :
+		    	
+		    	<ol>
+			    	<li>Go to BlueHost <a target="_blank" href="https://www.bluehost.com/track/fraxool/" style="font-weight: bold;font-size: 18px;">by clicking here</a></li>
+			    	<li>In their menu, click <b>Hosting</b> > <b>Shared Hosting</b></li>
+			    	<li>On this page, you'll have multiple plans. You can definitely start with the <b>Basic</b> one which will be enough for Upic</li>
+			    	<li>Click on <b>Select</b> and enter your website domain name (for example Upic.com)</li>
+					<li>Fill the form and in <b>Package Information</b> you can change the Account Plan to "One Year" if you want to pay less</li>
+					<li>Once you have filled this form and got an access to your hosting panel, you can follow the rest of the documentation :-)</li>
+		    	</ol>
+		    </p>
+	    	<br />
+	    	<h4>A. Transferring Files</h4>
+	    	
+	    	<p>
+		    	With your web hosting infos, you should have some FTP login details. Use a software like FileZilla to connect to your FTP server and <b>transfer the content of the folder named "Upic Files"</b> to your server.
+	    	</p>
+	    	<p>
+		    	For allowing photos to be uploaded, you will also need to change <b>the chmod</b> of the folders <b>uploads</b> to 775.
+	    	</p>
+	    	<br />
+	    	<h4>B. Set Up the Database</h4>
+	    	
+	    	<p>
+		    	On your web hosting panel, you should have an option to create a database and manage it through PhpMyAdmin.<br><br>Log-in to PhpMyAdmin and select your database, then go to the "Import" tab and <b>pick the file named "database.sql"</b> which is present in the folder named "Upic Database". This will create the required tables to use with Upic.
+	    	</p>
+	    	<br />
+	    	<h4>C. Update the config file</h4>
+	    	
+	    	<p>
+		    	In the folder "Upic Files", go to "includes" and open the file "config.php". In this file you should update the lines related to your website and database config as follow.
+	    	</p>
+	    	
+	    	<p>
+<pre><code class="language-php">// MAIN URL
+define("URL", "https://upic.yourdomain.com");</code></pre>
+<small>Change this line to your website URL</small>
+	    	</p>
+	    	
+	    	<p>
+<pre><code class="language-php">// DB Host
+define("DB_HOST", "localhost");
+
+// DB Username
+define("DB_USERNAME", "");
+
+// DB Password
+define("DB_PASSWORD", "");
+
+// DB Name
+define("DB_NAME", "");</code></pre>
+<small>Change these lines to your database config</small>
+	    	</p>
+	    	
+	    	<br>
+	    	<h4>Congrats! Your website is now ready to use!</h4>
+	    	
+	    	<h3>Step 2 - Creating the first account & admin area</h3>
+	    	
+	    	<p>
+		    	If you followed the documentation until now, your installation should work perfectly. To test if everything is fine, <b>go to your website URL</b> and go to the sign up page to register the very first account of your website. 
+	    	</p>
+	    	
+	    	<p>
+		    	<b>The first account you create will automatically be granted with admin privileges</b>. That's why, once logged in, you should see the red button called "Admin Area". 
+	    	</p>
+	    	
+	    	<p>In the admin area, you will see different menu items, don't hesitate to play with each sections to better discover the script, even if they are pretty self-explanatory.</p>
+	    	
+	    	<h3>Step 4 - Customizing Upic</h3>
+	    	
+	    	<p>Here are a few details on the files and how to configure some parts of Upic.</p>
+	    	
+	    	<p>
+		    	- The main design code / CSS is present in the file <b>css/custom.css</b>. That's where you can change colors and most aspects of the design<br>
+		    	- The top menu can be changed in the file <b>templates/headers/global_header.php</b> a <b>templates/headers/admin_header.php</b> for the admin side.
+		    </p>
+	    	
+	    	<hr />
+		
+			<h3>Help & Support</h3>
+			<p>
+				Do you need some help or are you facing any issue with PoppyScroll? If it's the case, feel free to message me directly from <a href="https://codecanyon.net/user/fraxool">my CodeCanyon profile</a> and I will be more than happy to help!
+			</p>
+		
+			<h3>You Like it? Rate it!</h3>
+			<p>
+				Do you like PoppyScroll? Don't forget to leave a review with 5 stars. It will help me a lot and encourage me to develop it with new free updates for you!
+			</p>
+	    
+	    </div>
+	    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/prism.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

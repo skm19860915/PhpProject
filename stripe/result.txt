@@ -1,0 +1,58 @@
+Stripe\Checkout\Session Object
+(
+    [id] => cs_xU3IraoPJQSnPGVlSS0jFglvKer6g5yADu9381AyiPGi9ZsNaLsrcJ7nO9R0h
+    [object] => checkout.session
+    [billing_address_collection] => 
+    [cancel_url] => https://axelhardy.com/dev/maxup/stripe/stripe-cancel.php
+    [client_reference_id] => 1
+    [customer] => cus_Evoa1uJTXx3Yjv
+    [customer_email] => hardy.axel@gmail.com
+    [display_items] => Array
+        (
+            [0] => Stripe\StripeObject Object
+                (
+                    [amount] => 10000
+                    [currency] => usd
+                    [plan] => Stripe\Plan Object
+                        (
+                            [id] => maxup_subscription
+                            [object] => plan
+                            [active] => 1
+                            [aggregate_usage] => 
+                            [amount] => 10000
+                            [billing_scheme] => per_unit
+                            [created] => 1555917334
+                            [currency] => usd
+                            [interval] => month
+                            [interval_count] => 1
+                            [livemode] => 
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [nickname] => maxup_subscription
+                            [product] => prod_EvnyjuTIOJgumB
+                            [tiers] => 
+                            [tiers_mode] => 
+                            [transform_usage] => 
+                            [trial_period_days] => 
+                            [usage_type] => licensed
+                        )
+
+                    [quantity] => 1
+                    [type] => plan
+                )
+
+        )
+
+    [livemode] => 
+    [locale] => 
+    [payment_intent] => 
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [subscription] => sub_EvoaA0LTNyxIeZ
+    [success_url] => https://axelhardy.com/dev/maxup/stripe/stripe-success.php
+)

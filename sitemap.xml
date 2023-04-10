@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://radtriads.com/</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/index.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-in.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/index.php?action=pick_plan</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=silver_monthly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=silver_yearly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=gold_monthly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=gold_yearly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=platinum_monthly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/sign-up.php?plan=platinum_yearly</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/content.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/page.php?id=4</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/page.php?id=5</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/about.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/faq.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://radtriads.com/lost-password.php</loc>
+  <lastmod>2020-11-05T17:16:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

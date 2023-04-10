@@ -1,0 +1,11 @@
+[15-Jan-2020 13:10:15 UTC] PHP Fatal error:  Cannot redeclare videoType() (previously declared in /home4/cognitoe/public_html/includes/functions.php:2) in /home4/cognitoe/public_html/includes/functions.php on line 10
+[08-Jul-2020 08:35:48 Europe/London] PHP Fatal error:  Uncaught (Status 404) (Request req_gnAKPpIJJy38Ec) No such subscription: sub_HblGi1sRQyqe6f
+  thrown in /home/radtriads/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[08-Jul-2020 08:36:07 Europe/London] PHP Fatal error:  Uncaught (Status 404) (Request req_zS08SOdaxL6n00) No such subscription: sub_HblGi1sRQyqe6f
+  thrown in /home/radtriads/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[10-Jul-2020 05:31:40 Europe/London] PHP Fatal error:  Uncaught (Status 404) (Request req_D4Pokcgl1lz6Zr) No such subscription: sub_Hbvo4xbO2kxC7y
+  thrown in /home/radtriads/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[10-Jul-2020 05:31:58 Europe/London] PHP Fatal error:  Uncaught (Status 404) (Request req_PRJD3XugkJq7Na) No such subscription: sub_Hbvo4xbO2kxC7y
+  thrown in /home/radtriads/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[10-Jul-2020 06:31:23 Europe/London] PHP Fatal error:  Uncaught (Status 404) (Request req_9gZHHiMNJlpwv9) No such subscription: sub_Hbvo4xbO2kxC7y
+  thrown in /home/radtriads/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38

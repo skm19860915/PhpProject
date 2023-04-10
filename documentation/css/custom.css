@@ -1,0 +1,83 @@
+body {
+	background: #F3F3F3;
+}
+
+.container {
+	margin-top: 100px;
+	
+}
+
+.container h2 {
+	text-align: center;
+	font-size: 40px;
+}
+
+h3 {
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+h3:first-child {
+	margin-top: 0;
+}
+
+.doc_plans_container {
+	margin-bottom: 30px;
+}
+
+.doc_plans_container h3 {
+	text-align: center;
+}
+
+.doc_plans_container h4 {
+	text-align: center;
+}
+
+.doc_plans_container h4 small {
+	text-align: center;
+    font-size: 15px;
+    line-height: 19px !important;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.card-in {
+	margin-top: 20px;
+}
+
+.card-in .btn {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card-in .list-group {
+	margin-bottom: 20px;
+}
+
+.card-in path {
+	fill: #2ecc71;
+}
+
+.alert-center {
+	text-align: center;
+}
+
+.modal-body {
+	text-align: center;
+}
+
+.modal-body input {
+	text-align: center !important;
+}
+
+.modal-body button {
+	font-weight: bold;
+}
+
+.alert-form {
+	display: none;
+}
+
+.success-block {
+	display: none;
+}

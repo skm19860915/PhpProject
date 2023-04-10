@@ -1,0 +1,52 @@
+#AuthUserFile /home/radtriad/public_html/.htpasswd
+#AuthType Basic
+#AuthName "My restricted Area"
+#Require valid-user
+
+RewriteEngine on
+
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.radtriads.com/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^radtriad\.info$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^radtriad\.net$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^radtriad\.org$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^radtriads\.info$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^radtriads\.net$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^radtriads\.org$
+RewriteRule ^/?$ "https\:\/\/radtriads\.com\/" [R=301,L]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 2000
+   php_value memory_limit -1
+   php_value post_max_size 40M
+   php_value session.gc_maxlifetime 9999999
+   php_value session.save_path "/home/radtriads/tmp"
+   php_value upload_max_filesize 1024M
+   php_flag zlib.output_compression On
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 2000
+   php_value memory_limit -1
+   php_value post_max_size 40M
+   php_value session.gc_maxlifetime 9999999
+   php_value session.save_path "/home/radtriads/tmp"
+   php_value upload_max_filesize 1024M
+   php_flag zlib.output_compression On
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
